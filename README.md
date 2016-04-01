@@ -2,7 +2,7 @@
 
 This repository contains a collection of [Jupyter](https://jupyter.org/) notebooks providing notes and examples to the bachelors course [Signals and Systems](http://www.int.uni-rostock.de/Signal-und-Systemtheorie.428.0.html) read by [Sascha Spors](http://www.int.uni-rostock.de/Staff-Info.23+B6JmNIYXNoPWUxOTliMTNjY2U2MDcyZjJiZTI0YTc4MmFkYTE5NjQzJnR4X2pwc3RhZmZfcGkxJTVCYmFja0lkJTVEPTMmdHhfanBzdGFmZl9waTElNUJzaG93VWlkJTVEPTExMQ__.0.html), Institute of Communications Engineering, Universität Rostock.
 
-See [index.ipynb](http://nbviewer.ipython.org/github/spatialaudio/digital-signal-processing-lecture/blob/master/index.ipynb) for an overview. The notebooks contain computational examples written in [IPython 3](http://ipython.org/). The examples are best explored in an interactive manner. 
+See [index.ipynb](http://nbviewer.ipython.org/github/spatialaudio/digital-signal-processing-lecture/blob/master/index.ipynb) for an overview. The notebooks contain computational examples written in [IPython 3](http://ipython.org/) which are best explored in an interactive manner. 
 
 You are invited to contribute by reporting errors and suggestions as [issues](https://github.com/spatialaudio/digital-signal-processing-lecture/issues) or directly to <mailto:Sascha.Spors@uni-rostock.de>.
 
