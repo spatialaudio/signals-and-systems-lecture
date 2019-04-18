@@ -32,14 +32,14 @@ def animate_convolution(x, h, y, t, tau, td, taud):
         return np.heaviside(x, .5)
 
     def animate(ti):
+        ax[0].collections.clear()
+        ax[0].fill_between(taud, 0, h_eval(ti, taud)*x_eval(taud), facecolor='red', alpha=0.3)
+
         lines[0].set_data(taud, h_eval(ti, taud))
         lines[1].set_data(taud, x_eval(taud))
 
         lines[2].set_data(taud, y_eval(taud))
         lines[3].set_data(ti, y_eval(ti))
-
-        ax[0].collections.clear()
-        ax[0].fill_between(taud, 0, h_eval(ti, taud)*x_eval(taud), facecolor='red', alpha=0.5)
 
         return lines
 
@@ -53,10 +53,10 @@ def animate_convolution(x, h, y, t, tau, td, taud):
     fig.subplots_adjust(hspace=0.5)
     plt.close()  # suppresses empty plot in notebook
 
-    lines = [ax[0].plot([], [], lw=2, label=r'$h(t-\tau)$')[0]]
-    lines.append(ax[0].plot([], [], lw=2, label=r'$x(\tau)$')[0])
-    lines.append(ax[1].plot([], [], 'g-', lw=2, label=r'$y(t) = x(t) * h(t)$')[0])
-    lines.append(ax[1].plot([], [], 'ro', lw=2)[0])
+    lines = [ax[0].plot([], [], label=r'$h(t-\tau)$')[0]]
+    lines.append(ax[0].plot([], [], label=r'$x(\tau)$')[0])
+    lines.append(ax[1].plot([], [], 'g-', label=r'$y(t) = x(t) * h(t)$')[0])
+    lines.append(ax[1].plot([], [], 'ro')[0])
 
     ax[0].set_xlim((-3, 5))
     ax[0].set_ylim((-.1, 1.2))
