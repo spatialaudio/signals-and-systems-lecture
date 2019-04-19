@@ -12,7 +12,7 @@ You are invited to contribute by reporting errors and suggestions as [issues](ht
 The Jupyter notebooks are available
 
 * Online as [static web pages](http://nbviewer.ipython.org/github/spatialaudio/signals-and-systems-lecture/blob/master/index.ipynb)
-* Online for [interactive use](http://mybinder.org/repo/spatialaudio/signals-and-systems-lecture) using [binder](http://mybinder.org/)
+* Online for [interactive use](https://mybinder.org/v2/gh/spatialaudio/signals-and-systems-lecture/master?filepath=index.ipynb) using [binder](https://mybinder.org/)
 * Local (offline) use on your computer 
 
 For local use on your computer you need a local Jupyter/IPython installation. The [Anaconda distribtution](https://www.continuum.io/downloads) provides a good starting point. You have to [clone/download the notebooks from Github](http://github.com/spatialaudio/signals-and-systems-lecture). Use a [Git](http://git-scm.org/) client to clone the notebooks and then start your local Jupyter server. For manual installation under OS X/Linux please refer to your packet manager.
