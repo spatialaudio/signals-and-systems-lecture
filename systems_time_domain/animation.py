@@ -49,7 +49,7 @@ def animate_convolution(x, h, y, t, tau, td, taud, interval=75):
 
         dot.set_data(ti, y.subs(t, ti))
 
-    # setup plot and line/fill styles
+    # define line/fill collections and setup plot
     fig, ax = plt.subplots(2, 1)
     fig.subplots_adjust(hspace=0.5)
     plt.close()  # suppresses empty plot in notebook
@@ -72,16 +72,19 @@ def animate_convolution(x, h, y, t, tau, td, taud, interval=75):
 
     dot, = ax[1].plot([], 'ro')
 
-    ax[0].set_xlim((-2, 5))
-    ax[0].set_ylim((-.1, 1.2))
-    ax[0].set_xlabel(r'$\tau$')
-    ax[0].legend(loc='upper right')
-    ax[0].grid(True)
+    for axi in ax:
+        axi.spines['left'].set_position('zero')
+        axi.spines['bottom'].set_position('zero')
+        axi.spines['right'].set_color('none')
+        axi.spines['top'].set_color('none')
+        axi.xaxis.set_ticks_position('bottom')
+        axi.yaxis.set_ticks_position('left')
+        axi.set_xlim((-3, 4))
+        axi.set_ylim((-.1, 1.2))
 
-    ax[1].set_xlim((-2, 5))
-    ax[1].set_ylim((-.1, 1.2))
-    ax[1].set_xlabel(r'$t$')
+    ax[0].set_xlabel(r'$\tau$', horizontalalignment='right', x=1.0)
+    ax[0].legend(loc='upper right')
+    ax[1].set_xlabel(r'$t$', horizontalalignment='right', x=1.0)
     ax[1].legend(loc='upper right')
-    ax[1].grid(True)
 
     return FuncAnimation(fig, animate, td, interval=interval)
