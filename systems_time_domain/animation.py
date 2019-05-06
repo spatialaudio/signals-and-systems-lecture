@@ -1,3 +1,4 @@
+"""Animations of common operations in signal processing."""
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
@@ -7,6 +8,7 @@ import sympy as sym
 
 def animate_convolution(x, h, y, t, tau, td, taud, interval=75):
     """Plot animation of graphical representation of linear convolution.
+
     Parameters
     ----------
     x : sympy function
@@ -25,19 +27,22 @@ def animate_convolution(x, h, y, t, tau, td, taud, interval=75):
         Interval in ms between frames of animation.
     Returns
     -------
-    matplotlib.animation.FuncAnimation object
+    matplotlib.animation.FuncAnimation object.
+
     """
     def animate(ti):
         p = sym.plot(x.subs(t, tau), (tau, taud[0], taud[-1]), show=False)
         line_x.set_segments(p[0].get_segments())
 
-        p = sym.plot(h.subs(t, t - tau).subs(t, ti), (tau, taud[0], taud[-1]), show=False)
+        p = sym.plot(h.subs(t, t - tau).subs(t, ti), (tau, taud[0], taud[-1]),
+                     show=False)
         line_h.set_segments(p[0].get_segments())
 
         p = sym.plot(y, (t, taud[0], taud[-1]), show=False)
         line_y.set_segments(p[0].get_segments())
 
-        p = sym.plot(x.subs(t, tau)*h.subs(t, ti - tau), (tau, -5, 5), show=False)
+        p = sym.plot(x.subs(t, tau)*h.subs(t, ti - tau), (tau, -5, 5),
+                     show=False)
         points = p[0].get_points()
         verts = [[(xi[0], xi[1]) for xi in np.transpose(np.array(points))]]
         fill.set_verts(verts)
