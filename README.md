@@ -6,6 +6,8 @@ See [index.ipynb](http://nbviewer.ipython.org/github/spatialaudio/digital-signal
 
 You are invited to contribute by reporting errors and suggestions as [issues](https://github.com/spatialaudio/digital-signal-processing-lecture/issues) or directly to <mailto:Sascha.Spors@uni-rostock.de>.
 
+[![Build Status](https://travis-ci.org/spatialaudio/signals-and-systems-lecture.svg?branch=ci)](https://travis-ci.org/spatialaudio/signals-and-systems-lecture)
+
 
 ## Getting Started
 
