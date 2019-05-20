@@ -12,4 +12,4 @@ install:
   - pip install -r requirements.txt
   - pip install -r ci/requirements.txt
 script:
-  - python -m sphinx ci/ _build/ -b html
+  - python -m sphinx . _build/ -b html
