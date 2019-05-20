@@ -4,9 +4,9 @@ This repository contains a collection of [Jupyter](https://jupyter.org/) noteboo
 
 See [index.ipynb](http://nbviewer.ipython.org/github/spatialaudio/digital-signal-processing-lecture/blob/master/index.ipynb) for an overview. The notebooks contain computational examples written in [IPython 3](http://ipython.org/) which are best explored in an interactive manner. 
 
-You are invited to contribute by reporting errors and suggestions as [issues](https://github.com/spatialaudio/digital-signal-processing-lecture/issues) or directly to <mailto:Sascha.Spors@uni-rostock.de>.
+You are invited to contribute by reporting errors and suggestions as [issues](https://github.com/spatialaudio/digital-signal-processing-lecture/issues) or directly to [Sascha.Spors@uni-rostock.de](mailto:Sascha.Spors@uni-rostock.de).
 
-[![Build Status](https://travis-ci.org/spatialaudio/signals-and-systems-lecture.svg?branch=ci)](https://travis-ci.org/spatialaudio/signals-and-systems-lecture)
+Build Status [![Build Status](https://travis-ci.org/spatialaudio/signals-and-systems-lecture.svg?branch=ci)](https://travis-ci.org/spatialaudio/signals-and-systems-lecture)
 
 
 ## Getting Started
