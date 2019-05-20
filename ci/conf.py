@@ -34,6 +34,7 @@ import sphinx_bootstrap_theme
 extensions = [
     'nbsphinx',
     'sphinx.ext.mathjax',
+    'sphinx.ext.doctest',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
