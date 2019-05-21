@@ -3,8 +3,3 @@ Sphinx-RTD-Theme
 nbsphinx
 ipykernel
 sphinx_bootstrap_theme
-sphinxcontrib-bibtex
-
-NumPy
-SciPy
-matplotlib
