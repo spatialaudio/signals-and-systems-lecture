@@ -1,13 +1,11 @@
-# Signals and Systems
+# Signals and Systems 
+[![Build Status](https://travis-ci.org/spatialaudio/signals-and-systems-lecture.svg?branch=ci)](https://travis-ci.org/spatialaudio/signals-and-systems-lecture)
 
 This repository contains a collection of [Jupyter](https://jupyter.org/) notebooks providing notes and examples to the bachelors course [Signals and Systems](http://www.int.uni-rostock.de/Signal-und-Systemtheorie.428.0.html) read by [Sascha Spors](http://www.int.uni-rostock.de/Staff-Info.23+B6JmNIYXNoPWUxOTliMTNjY2U2MDcyZjJiZTI0YTc4MmFkYTE5NjQzJnR4X2pwc3RhZmZfcGkxJTVCYmFja0lkJTVEPTMmdHhfanBzdGFmZl9waTElNUJzaG93VWlkJTVEPTExMQ__.0.html), Institute of Communications Engineering, Universität Rostock.
 
 See [index.ipynb](http://nbviewer.ipython.org/github/spatialaudio/digital-signal-processing-lecture/blob/master/index.ipynb) for an overview. The notebooks contain computational examples written in [IPython 3](http://ipython.org/) which are best explored in an interactive manner. 
 
 You are invited to contribute by reporting errors and suggestions as [issues](https://github.com/spatialaudio/digital-signal-processing-lecture/issues) or directly to [Sascha.Spors@uni-rostock.de](mailto:Sascha.Spors@uni-rostock.de).
-
-Build Status [![Build Status](https://travis-ci.org/spatialaudio/signals-and-systems-lecture.svg?branch=ci)](https://travis-ci.org/spatialaudio/signals-and-systems-lecture)
-
 
 ## Getting Started
 
