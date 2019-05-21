@@ -1,5 +1,5 @@
 # Signals and Systems 
-[![Build Status](https://travis-ci.org/spatialaudio/signals-and-systems-lecture.svg?branch=ci)](https://travis-ci.org/spatialaudio/signals-and-systems-lecture)
+[![Build Status](https://travis-ci.org/spatialaudio/signals-and-systems-lecture.svg?branch=master)](https://travis-ci.org/spatialaudio/signals-and-systems-lecture)
 
 This repository contains a collection of [Jupyter](https://jupyter.org/) notebooks providing notes and examples to the bachelors course [Signals and Systems](http://www.int.uni-rostock.de/Signal-und-Systemtheorie.428.0.html) read by [Sascha Spors](http://www.int.uni-rostock.de/Staff-Info.23+B6JmNIYXNoPWUxOTliMTNjY2U2MDcyZjJiZTI0YTc4MmFkYTE5NjQzJnR4X2pwc3RhZmZfcGkxJTVCYmFja0lkJTVEPTMmdHhfanBzdGFmZl9waTElNUJzaG93VWlkJTVEPTExMQ__.0.html), Institute of Communications Engineering, Universität Rostock.
 
