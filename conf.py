@@ -51,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Signals and Systems'
-copyright = 'Sascha Spors'
+copyright = 'Sascha Spors, University of Rostock, Germany'
 author = 'Sascha Spors'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -220,7 +220,7 @@ htmlhelp_basename = 'Signals_and_Systems_doc'
 nbsphinx_execute_arguments = ['--InlineBackend.figure_formats={"svg", "pdf"}']
 nbsphinx_execute = 'always'
 nbsphinx_timeout = 300
-nbsphinx_allow_errors = True
+nbsphinx_allow_errors = False
 
 
 latex_elements = {
