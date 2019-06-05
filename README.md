@@ -2,6 +2,8 @@
 
 This repository contains a collection of [Jupyter](https://jupyter.org/) notebooks introducing the theory of linear time-invariant (LTI) signals and systems. The continous-time case, as well as the sampled (discrete-time) case is covered. The theory is accompanied by a series of computational examples and exercises written in [IPython 3](http://ipython.org/). Please take a look at the [static version](http://nbviewer.ipython.org/github/spatialaudio/signals-and-systems-lecture/blob/master/index.ipynb) for a first glance. The contents are provided as [Open Educational Resource](https://de.wikipedia.org/wiki/Open_Educational_Resources). You can give the project a [Star](https://github.com/spatialaudio/signals-and-systems-lecture/stargazers) if you like the notebooks.
 
+![System in the temporal and spectral domain](systems_spectral_domain/LTI_system_time_spectral_domain.png)
+
 The notebooks constitute the lecture notes to the bachelors course [Signals and Systems](http://www.int.uni-rostock.de/Signal-und-Systemtheorie.428.0.html) at the Universität Rostock given by [Sascha Spors](http://www.int.uni-rostock.de/Staff-Info.23+B6JmNIYXNoPWUxOTliMTNjY2U2MDcyZjJiZTI0YTc4MmFkYTE5NjQzJnR4X2pwc3RhZmZfcGkxJTVCYmFja0lkJTVEPTMmdHhfanBzdGFmZl9waTElNUJzaG93VWlkJTVEPTExMQ__.0.html).
 
 
