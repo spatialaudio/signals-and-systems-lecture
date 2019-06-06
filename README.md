@@ -60,8 +60,8 @@ Furthermore, an outlook to practical applications is given whenever possible.
 
 The material is organized in two major blocks, namely
 
-* time-continuous and
-* time-discrete (temporal sampling)
+* continuous-time and
+* discrete-time (temporal sampling)
 
 signals and systems.
 The two blocks become interrelated by the discussion of the ideal temporal
