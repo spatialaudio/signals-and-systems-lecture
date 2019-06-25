@@ -50,8 +50,10 @@ def animate_convolution(x, h, y, t, tau, td, taud, interval=75):
         dot.set_data(ti, y.subs(t, ti))
 
     # define line/fill collections and setup plot
-    fig, ax = plt.subplots(2, 1)
-    fig.subplots_adjust(hspace=0.5)
+    default_figsize = plt.rcParams.get('figure.figsize')
+    fig, ax = plt.subplots(2, 1, figsize=(default_figsize[0],
+                                          1.5*default_figsize[1]))
+    fig.subplots_adjust(hspace=0.2)
     plt.close()  # suppresses empty plot in notebook
 
     fill = PolyCollection([], facecolors='r')
