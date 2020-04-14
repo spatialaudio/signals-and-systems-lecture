@@ -1,4 +1,4 @@
-# Continuous-Time and Discrete-Time Signals and Systems - Theory and Computational Examples
+# Continuous- and Discrete-Time Signals and Systems - Theory and Computational Examples
 
 This repository collects didactically edited [Jupyter](https://jupyter.org/)
 notebooks that introduce the theory of linear, time-invariant (LTI) signals and
