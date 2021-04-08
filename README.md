@@ -1,5 +1,7 @@
 # Continuous- and Discrete-Time Signals and Systems - Theory and Computational Examples
 
+![Integration Test](https://github.com/spatialaudio//signals-and-systems-lecture/workflows/Integration%20Test/badge.svg)
+
 This repository collects didactically edited [Jupyter](https://jupyter.org/)
 notebooks that introduce the theory of linear, time-invariant (LTI) signals and
 systems.
@@ -125,6 +127,6 @@ This will be online very soon.
 
 ## Build Status
 
-The computational examples in the notebooks are automatically build and checked for errors by continuous integration using the [travis-ci.org](https://travis-ci.org/) service.
+The computational examples in the notebooks are automatically build and checked for errors by continuous integration using github actions.
 
-[![Build Status](https://travis-ci.org/spatialaudio/signals-and-systems-lecture.svg?branch=master)](https://travis-ci.org/spatialaudio/signals-and-systems-lecture)
+![Integration Test](https://github.com/spatialaudio//signals-and-systems-lecture/workflows/Integration%20Test/badge.svg)
