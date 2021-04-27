@@ -41,11 +41,13 @@ def animate_convolution(x, h, y, t, tau, td, taud, interval=75):
         p = sym.plot(y, (t, taud[0], taud[-1]), show=False)
         line_y.set_segments(p[0].get_segments())
 
-        p = sym.plot(x.subs(t, tau)*h.subs(t, ti - tau), (tau, -5, 5),
+        p = sym.plot(x.subs(t, tau) * h.subs(t, ti - tau), (tau, -5, 5),
                      show=False)
-        points = p[0].get_points()
-        verts = [[(xi[0], xi[1]) for xi in np.transpose(np.array(points))]]
-        fill.set_verts(verts)
+        
+        # see https://github.com/sympy/sympy/issues/21392
+        #points = p[0].get_points()
+        #verts = [[(xi[0], xi[1]) for xi in np.transpose(np.array(points))]]
+        #fill.set_verts(verts)
 
         dot.set_data(ti, y.subs(t, ti))
 
