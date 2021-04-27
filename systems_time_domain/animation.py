@@ -30,6 +30,9 @@ def animate_convolution(x, h, y, t, tau, td, taud, interval=75):
     matplotlib.animation.FuncAnimation object.
 
     """
+    def my_heaviside(x):
+        return np.heaviside(x,1/2)
+    
     def animate(ti):
         p = sym.plot(x.subs(t, tau), (tau, taud[0], taud[-1]), show=False)
         line_x.set_segments(p[0].get_segments())
@@ -45,12 +48,18 @@ def animate_convolution(x, h, y, t, tau, td, taud, interval=75):
                      show=False)
         
         # see https://github.com/sympy/sympy/issues/21392
-        #points = p[0].get_points()
-        #verts = [[(xi[0], xi[1]) for xi in np.transpose(np.array(points))]]
-        #fill.set_verts(verts)
-
+        #points = np.array(p[0].get_points())
+        # alternative via lambdify
+        func = sym.lambdify(tau, x.subs(t, tau) * h.subs(t, ti - tau), modules=['numpy', {'Heaviside':my_heaviside}])
+        tt = np.linspace(-5,5,100)
+        points = np.vstack((tt, np.asarray(func(tt))))
+        
+        verts = [[(xi[0], xi[1]) for xi in points.T]]
+        fill.set_verts(verts)
+        
         dot.set_data(ti, y.subs(t, ti))
 
+    
     # define line/fill collections and setup plot
     default_figsize = plt.rcParams.get('figure.figsize')
     fig, ax = plt.subplots(2, 1, figsize=(default_figsize[0],
