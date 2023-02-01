@@ -13,7 +13,7 @@ def cconv(x, y, P):
 def _wrap(x, N):
     """Zero-padding to length N or periodic summation with period N"""
     M = len(x)
-    rows = np.int(np.ceil(M/N))
+    rows = np.ceil(M/N).astype(int)
     
     if (M < int(N*rows)):
         x = np.pad(x, (0, N*rows-M), 'constant')
