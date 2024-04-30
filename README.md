@@ -129,4 +129,4 @@ This will be online very soon.
 
 The computational examples in the notebooks are automatically build and checked for errors by continuous integration using github actions.
 
-![Integration Test](https://github.com/spatialaudio//signals-and-systems-lecture/workflows/Integration%20Test/badge.svg)
+![Integration Test](https://github.com/spatialaudio//signals-and-systems-lecture/actions/workflows/notebook_ci.yml/badge.svg)
