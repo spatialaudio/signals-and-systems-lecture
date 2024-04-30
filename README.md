@@ -1,6 +1,6 @@
 # Continuous- and Discrete-Time Signals and Systems - Theory and Computational Examples
 
-![Integration Test](https://github.com/spatialaudio//signals-and-systems-lecture/workflows/Integration%20Test/badge.svg)
+![Integration Test](https://github.com/spatialaudio//signals-and-systems-lecture/actions/workflows/notebook_ci.yml/badge.svg)
 
 This repository collects didactically edited [Jupyter](https://jupyter.org/)
 notebooks that introduce the theory of linear, time-invariant (LTI) signals and
