@@ -57,7 +57,7 @@ def animate_convolution(x, h, y, t, tau, td, taud, interval=75):
         verts = [[(xi[0], xi[1]) for xi in points.T]]
         fill.set_verts(verts)
         
-        dot.set_data(ti, y.subs(t, ti))
+        dot.set_data([ti], [float(y.subs(t, ti))])
 
     
     # define line/fill collections and setup plot

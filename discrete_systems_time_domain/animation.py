@@ -7,13 +7,13 @@ def animate_discrete_convolution(x, h, y, k, kappa, interval=100):
 
     def update_stem(stem, x, y):
         stem.markerline.set_data(x, y)
-        for idx, stem_line in enumerate(stem.stemlines):
-            stem_line.set_data([x[idx], x[idx]], [0, y[idx]])
+        stem.stemlines.set_segments(
+            [[(xi, 0), (xi, yi)] for xi, yi in zip(x, y)])
 
     def animate(kappa_i):
         update_stem(stem_x, k, x(k))
         update_stem(stem_h, k, h(kappa_i - k))
-        dot.set_data(kappa_i, y[-k[0] + kappa_i])
+        dot.set_data([kappa_i], [y[-k[0] + kappa_i]])
 
     # setup plot and define objects
     default_figsize = plt.rcParams.get('figure.figsize')
